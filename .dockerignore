@@ -1,0 +1,14 @@
+.git
+.gitignore
+.env
+venv
+__pycache__
+*.pyc
+*.pyo
+.cursor
+canvases
+class_dataset.csv
+load_data.py
+schema.sql
+README.md
+**/*.md

@@ -11,6 +11,17 @@
 </head>
 <body>
   <h1>Students</h1>
+  <h2>Class skill averages</h2>
+  {% if skill_averages %}
+  <ul>
+    {% for skill in skill_averages %}
+    <li>{{ skill.label }}: {{ skill.value }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No skill averages found.</p>
+  {% endif %}
+  <h2>Names</h2>
   {% if names %}
   <ul>
     {% for name in names %}
